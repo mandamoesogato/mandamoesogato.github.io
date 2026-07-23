@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Redes Oficiales | Mogolic Zone</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.90)),
+url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:#fff;
+
+overflow-x:hidden;
+
+}
+
+/* Fondo animado */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(#00ff8850 1px, transparent 1px);
+
+background-size:45px 45px;
+
+animation:fondo 25s linear infinite;
+
+z-index:-1;
+
+opacity:.35;
+
+}
+
+@keyframes fondo{
+
+from{
+transform:translateY(0px);
+}
+
+to{
+transform:translateY(45px);
+}
+
+}
+
+header{
+
+padding:90px 20px 60px;
+
+text-align:center;
+
+}
+
+header h1{
+
+font-size:65px;
+
+font-weight:800;
+
+color:#00ff88;
+
+text-shadow:0 0 25px #00ff88;
+
+margin-bottom:15px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:850px;
+
+margin:auto;
+
+color:#ddd;
+
+line-height:1.7;
+
+}
+
+.container{
+
+width:92%;
+
+max-width:1450px;
+
+margin:auto;
+
+padding-bottom:80px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:25px;
+
+padding:35px;
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:0 0 30px rgba(0,0,0,.45);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+border-color:#00ff88;
+
+box-shadow:0 0 35px rgba(0,255,136,.45);
+
+}
+
+.card img{
+
+width:90px;
+
+height:90px;
+
+object-fit:contain;
+
+margin-bottom:20px;
+
+filter:drop-shadow(0 0 10px rgba(255,255,255,.3));
+
+}
+
+.card h2{
+
+font-size:28px;
+
+margin-bottom:12px;
+
+}
+
+.card p{
+
+font-size:16px;
+
+color:#cfcfcf;
+
+margin-bottom:25px;
+
+line-height:1.6;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#00ff88;
+
+color:#000;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:12px;
+
+transition:.30s;
+
+}
+
+.btn:hover{
+
+background:#fff;
+
+transform:scale(1.08);
+
+}
+
+.volver{
+
+display:block;
+
+width:260px;
+
+margin:70px auto 0;
+
+text-align:center;
+
+padding:18px;
+
+background:#00ff88;
+
+color:#000;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.volver:hover{
+
+background:white;
+
+transform:scale(1.05);
+
+}
+
+footer{
+
+margin-top:70px;
+
+padding:30px;
+
+text-align:center;
+
+background:rgba(0,0,0,.65);
+
+color:#aaa;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌐 Redes Oficiales</h1>
+
+<p>
+
+Seguí a <b>Mogolic Zone</b> en todas nuestras plataformas para enterarte de novedades,
+actualizaciones de <b>Mogolic Craft</b>, eventos, directos y contenido exclusivo.
+
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+    <!-- KICK -->
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Kick_logo.svg/512px-Kick_logo.svg.png">
+
+<h2>Kick</h2>
+
+<p>
+Directos, eventos y contenido en vivo de Mogolic Zone.
+</p>
+
+<a class="btn" 
+href="https://kick.com/mogoliczone"
+target="_blank">
+Ver Kick
+</a>
+
+</div>
+
+
+
+<!-- TWITCH -->
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Twitch_logo.svg/512px-Twitch_logo.svg.png">
+
+<h2>Twitch</h2>
+
+<p>
+Seguinos en nuestros streams y transmisiones oficiales.
+</p>
+
+<a class="btn"
+href="https://www.twitch.tv/mogoliczone"
+target="_blank">
+Ver Twitch
+</a>
+
+</div>
+
+
+
+<!-- DISCORD -->
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+
+<h2>Discord</h2>
+
+<p>
+Unite a nuestra comunidad gamer y hablá con otros jugadores.
+</p>
+
+<a class="btn"
+href="https://discord.gg/4MkEhaRwdy"
+target="_blank">
+Entrar Discord
+</a>
+
+</div>
+
+
+
+<!-- X -->
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023.svg/512px-X_logo_2023.svg.png">
+
+<h2>X / Twitter</h2>
+
+<p>
+Noticias, anuncios y actualizaciones de Mogolic Zone.
+</p>
+
+<a class="btn"
+href="https://x.com/mogoliczoneMGZ"
+target="_blank">
+Seguir X
+</a>
+
+</div>
+
+
+
+<!-- TIKTOK -->
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+
+<h2>TikTok</h2>
+
+<p>
+Clips, momentos divertidos y contenido corto.
+</p>
+
+<a class="btn"
+href="https://www.tiktok.com/@mogoliczone"
+target="_blank">
+Ver TikTok
+</a>
+
+</div>
+
+
+
+<!-- INSTAGRAM -->
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+
+<h2>Instagram</h2>
+
+<p>
+Fotos, novedades y publicaciones de la comunidad.
+</p>
+
+<a class="btn"
+href="https://www.instagram.com/mogolic.zone/"
+target="_blank">
+Seguir Instagram
+</a>
+
+</div>
+
+
+
+<!-- YOUTUBE -->
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+
+<h2>YouTube</h2>
+
+<p>
+Videos, tutoriales, noticias y contenido de Mogolic Zone.
+</p>
+
+<a class="btn"
+href="https://www.youtube.com/@MogolicZone-Comunidad"
+target="_blank">
+Ver YouTube
+</a>
+
+</div>
+
+</div>
+
+
+<a class="volver" href="../index.html">
+⬅ Volver a Mogolic Zone
+</a>
+
+
+</div>
+
+
+<footer>
+
+<p>
+© 2026 Mogolic Zone - Comunidad Gamer
+</p>
+
+<p>
+Mogolic Craft | Minecraft 1.21.1 Fabric
+</p>
+
+</footer>
+
+
+</body>
+
+</html>

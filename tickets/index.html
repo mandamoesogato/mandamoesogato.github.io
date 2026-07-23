@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mogolic Zone | Tickets</title>
+
+<style>
+
+body{
+background:#080808;
+color:white;
+font-family:Arial;
+}
+
+.container{
+
+width:80%;
+margin:auto;
+padding:50px;
+
+}
+
+
+h1{
+
+text-align:center;
+color:#ff3333;
+
+}
+
+
+.box{
+
+background:#151515;
+padding:30px;
+border-radius:15px;
+
+}
+
+
+input, textarea, select{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+
+background:#222;
+color:white;
+
+border:none;
+border-radius:8px;
+
+}
+
+
+button{
+
+background:#ff3333;
+color:white;
+
+padding:15px 30px;
+
+border:none;
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:white;
+color:red;
+
+}
+
+
+a{
+
+color:white;
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+🎫 Crear Ticket
+</h1>
+
+
+<div class="box">
+
+
+<input id="nombre" placeholder="Tu nombre">
+
+
+<input id="discord" placeholder="Tu Discord">
+
+
+<select id="motivo">
+
+<option>Soporte</option>
+
+<option>Compra</option>
+
+<option>Reporte</option>
+
+<option>Staff</option>
+
+</select>
+
+
+<textarea id="mensaje" placeholder="Describe tu problema"></textarea>
+
+
+<button onclick="enviar()">
+Enviar Ticket
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+function enviar(){
+
+
+let webhook="https://discord.com/api/webhooks/1528870944993706146/zaSnMNjyp6_B7IEViBIy6R80Ywhqybgy9Jv0nOLf4QzKS848dDqYNA9obWjZu0U8IYWV";
+
+
+let nombre=document.getElementById("nombre").value;
+
+let discord=document.getElementById("discord").value;
+
+let motivo=document.getElementById("motivo").value;
+
+let mensaje=document.getElementById("mensaje").value;
+
+
+
+fetch(webhook,{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify({
+
+embeds:[{
+
+title:"🎫 Nuevo Ticket Mogolic Zone",
+
+color:16711680,
+
+fields:[
+
+{
+name:"Usuario",
+value:nombre
+},
+
+{
+name:"Discord",
+value:discord
+},
+
+{
+name:"Motivo",
+value:motivo
+},
+
+{
+name:"Mensaje",
+value:mensaje
+}
+
+]
+
+}]
+
+})
+
+});
+
+
+alert("Ticket enviado correctamente");
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

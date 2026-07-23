@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mogolic Zone | Comunidad Gamer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#080808;
+color:white;
+}
+
+header{
+height:80px;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 50px;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#00ff88;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ff88;
+}
+
+/* PORTADA */
+
+.hero{
+
+height:500px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.80)
+),
+url("https://media.discordapp.net/attachments/1528471646833348649/1528843341221855242/a.png?ex=6a63ba51&is=6a6268d1&hm=7b1564ba22299210b107589f4f620c9faebf537eac85c3370be36ef02c4d0c4a&=&format=webp&quality=lossless&width=1212&height=808");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#00ff88;
+}
+
+.hero p{
+font-size:20px;
+margin-top:15px;
+}
+
+.btn{
+
+display:inline-block;
+
+margin:20px 10px;
+
+padding:15px 35px;
+
+background:#00ff88;
+
+color:black;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:scale(1.1);
+
+}
+
+section{
+
+padding:60px 10%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:35px;
+
+margin-bottom:40px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:#151515;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+}
+
+.card img{
+
+width:220px;
+
+border-radius:15px;
+
+margin-bottom:20px;
+
+}
+
+.staff img{
+
+width:120px;
+
+height:120px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+}
+
+.social{
+
+text-align:center;
+
+}
+
+.social a{
+
+display:inline-block;
+
+background:#222;
+
+color:white;
+
+text-decoration:none;
+
+padding:15px 25px;
+
+margin:10px;
+
+border-radius:10px;
+
+}
+
+.social a:hover{
+
+background:#00ff88;
+
+color:black;
+
+}
+
+footer{
+
+background:#111;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Mogolic Zone
+</div>
+
+<nav>
+
+<a href="#">
+Inicio
+</a>
+
+<a href="#descargas">
+Descargas
+</a>
+
+<a href="#staff">
+Staff
+</a>
+
+<a href="tienda/index.html">
+Tienda
+</a>
+
+<a href="comunidad/index.html">
+Comunidad
+</a>
+
+<a href="tickets/index.html">
+Tickets
+</a>
+
+<a href="noticias/index.html">
+Noticias
+</a>
+
+<a href="redes/index.html">
+Redes
+</a>
+
+</nav>
+
+</header>
+
+<div class="hero">
+
+<div>
+
+<h1>
+Bienvenido a <span>Mogolic Craft</span>
+</h1>
+
+<p>
+Descargá el launcher oficial de Minecraft 1.21.1 Fabric para unirte al servidor de Mogolic Zone.
+</p>
+
+<a class="btn" href="#descargas">
+⬇ Descargar Launcher
+</a>
+
+<a class="btn" href="comunidad/index.html">
+Comunidad
+</a>
+
+<a class="btn" href="tickets/index.html">
+🎫 Tickets
+</a>
+
+<a class="btn" href="noticias/index.html">
+📰 Noticias
+</a>
+
+</div>
+
+</div>
+
+<!-- DESCARGAS -->
+
+ <section id="descargas">
+
+<h2 class="title">
+Descargar Mogolic Craft
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://cdn.discordapp.com/attachments/1528471646833348649/1528478248579891200/51cdbb26-7322-4ff2-9cac-6178f4a903ae.png?ex=6a63b7cc&is=6a62664c&hm=487ff1acbf8d01b79fd5d5a7aaa2e9e5e72e40b9b39034095d7bd204cc0edbdc&" alt="Mogolic Craft">
+
+<h2>Mogolic Craft Launcher</h2>
+
+<p>
+Launcher oficial de <b>Mogolic Zone</b>.
+<br><br>
+✔ Minecraft 1.21.1 Fabric
+<br>
+✔ Instalación automática
+<br>
+✔ Actualizador de Mods
+<br>
+✔ Optimizado para nuestro servidor
+</p>
+
+<a class="btn"
+href="https://www.mediafire.com/file/2n8blda6j2nyabi/MogolicCraft.Setup.exe/file"
+target="_blank">
+⬇ Descargar Launcher
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="descargas">
+
+<h2 class="title">
+Descargar Mogolic Craft
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://cdn.discordapp.com/attachments/1528471646833348649/1528478248579891200/51cdbb26-7322-4ff2-9cac-6178f4a903ae.png?ex=6a63b7cc&is=6a62664c&hm=487ff1acbf8d01b79fd5d5a7aaa2e9e5e72e40b9b39034095d7bd204cc0edbdc&" alt="Mogolic Craft">
+
+<h2>Mogolic Craft Launcher</h2>
+
+<p>
+Launcher oficial de <b>Mogolic Zone</b>.
+<br><br>
+✔ Minecraft 1.21.1 Fabric
+<br>
+✔ Instalación automática
+<br>
+✔ Actualizador de Mods
+<br>
+✔ Optimizado para nuestro servidor
+</p>
+
+<a class="btn"
+href="https://www.mediafire.com/file/2n8blda6j2nyabi/MogolicCraft.Setup.exe/file"
+target="_blank">
+⬇ Descargar Launcher
+</a>
+
+</div>
+
+</div>
+
+</section>
